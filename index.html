@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JSON Server</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>JSON Server</h1>
+
+        <ul id="render-list"></ul>
+    
+        <div class="toolbar">
+            <h2>Get data</h2>
+            <div class="">
+                <button type="button" data-action="get" data-instance="tasks">Tasks</button>
+                <button type="button" data-action="get" data-instance="posts">Posts</button>
+                <button type="button" data-action="get" data-instance="comments">Comments</button>
+            </div>
+    
+            <h2>Create item</h2>
+            <div class="">
+                <button type="button" data-action="create" data-instance="tasks">Tasks</button>
+                <button type="button" data-action="create" data-instance="posts">Posts</button>
+                <button type="button" data-action="create" data-instance="comments">Comments</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal-cover"></div>
+        <div class="modal-window">
+            <h2>Create/Update</h2>
+            <button type="button" data-action="close">x</button>
+            <form>
+                <div id="form-fields"></div>
+                <button type="button" data-action="save">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="js/main.js"></script>
+</html>
